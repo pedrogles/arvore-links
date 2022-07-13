@@ -1,3 +1,6 @@
 # arvore-links
-Uma árvore de Links feita com HTML e CSS.
-![arvore-print](https://user-images.githubusercontent.com/76228682/177208807-a81e5545-e997-4618-939b-8d205abaa3db.jpg)
+Uma árvore de Links feita com HTML, SCSS e JavaScript.
+
+
+https://user-images.githubusercontent.com/76228682/178822294-b4377eeb-0d0e-4a92-a513-2f61b7b9f2ea.mp4
+

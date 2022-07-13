@@ -4,7 +4,8 @@
   --fontColor1: #000000;
   --fontColor2: #9A7EAB;
   --fontColor3: #4D1370;
-  --details: #CFAAE6; }
+  --details: #CFAAE6;
+  --btnDarkMode: #ffffff; }
 
 .darkMode:root {
   --background: #000000;
@@ -12,7 +13,8 @@
   --fontColor1: #ffffff;
   --fontColor2: #B69BDE;
   --fontColor3: #856BAC;
-  --details: #856BAC; }
+  --details: #856BAC;
+  --btnDarkMode: #ffffff; }
 
 * {
   margin: 0;
@@ -25,15 +27,22 @@
     * body header .containerDarkMode {
       position: relative;
       height: 3em;
-      margin-left: 80vw; }
+      margin-left: 80vw;
+      transition: none; }
       * body header .containerDarkMode #darkMode {
         position: absolute;
+        background-color: var(--background);
         top: 5vh;
         cursor: pointer;
-        height: 1.8em;
-        width: 1.8em;
+        height: 2em;
+        width: 2em;
         border: none;
         border-radius: 50%; }
+        * body header .containerDarkMode #darkMode .darkModeColor {
+          width: 2em;
+          height: 2em;
+          border-radius: 50%;
+          background-color: var(--btnDarkMode); }
     * body main #perfil {
       display: flex;
       flex-direction: column;

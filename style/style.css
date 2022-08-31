@@ -1,0 +1,96 @@
+:root {
+  --background: #000000;
+  --interface: #ffffffce;
+  --fontColor1: #ffffff;
+  --fontColor2: #000000;
+  --fontColor3: #9ddffa;
+  --details: #8f8f8f;
+  --btnDarkMode: #ffffff; }
+
+.darkMode:root {
+  --background: #ffffff;
+  --interface: #000000;
+  --fontColor1: #000000;
+  --fontColor2: #ffffff;
+  --fontColor3: #146b8d;
+  --details: #8f8f8f;
+  --btnDarkMode: #ffffff; }
+
+* {
+  margin: 0;
+  padding: 0; }
+  * body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background);
+    height: 100vh;
+    transition: background-color 1.2s; }
+    * body header .containerDarkMode {
+      position: relative;
+      height: 3em;
+      margin-left: 80vw;
+      transition: none; }
+      * body header .containerDarkMode #darkMode {
+        position: absolute;
+        background-color: var(--background);
+        top: 5vh;
+        cursor: pointer;
+        height: 2em;
+        width: 2em;
+        border: none;
+        border-radius: 50%; }
+        * body header .containerDarkMode #darkMode .darkModeColor {
+          width: 2em;
+          height: 2em;
+          border-radius: 50%;
+          background-color: var(--btnDarkMode); }
+    * body main #perfil {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      * body main #perfil .photo {
+        border: solid 0.2em #27fd55;
+        height: 8em;
+        width: 8em;
+        border-radius: 50%;
+        margin-bottom: 1em; }
+      * body main #perfil h1 {
+        font-size: 1.5rem;
+        color: var(--fontColor1); }
+      * body main #perfil p {
+        font-size: 1rem;
+        color: var(--fontColor1); }
+    * body main #link {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1em; }
+      * body main #link .links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1em;
+        height: 3em;
+        width: 10em;
+        background-color: var(--interface);
+        border-radius: 10px; }
+        * body main #link .links a {
+          color: var(--fontColor2);
+          text-decoration: none;
+          padding: 1em 3em; }
+        * body main #link .links a:hover {
+          color: var(--fontColor2);
+          text-decoration: underline; }
+      * body main #link .links:hover {
+        background-color: var(--details); }
+    * body footer #rodape {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      margin-top: 3em;
+      color: var(--fontColor1);
+      font-size: 1em; }
+      * body footer #rodape .underline {
+        color: var(--fontColor3);
+        text-decoration: underline; }

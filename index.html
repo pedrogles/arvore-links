@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+        <link rel="manifest" href="img/site.webmanifest">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LinkTree - Pedro Gabriel Lima e Silva</title>
+        <link rel="stylesheet" href="./style/style.css">
+        <!-- Fonts -->
+        
+    </head>
+    <body>
+        <header>
+            <div class="containerDarkMode">
+                <button 
+                id="darkMode" 
+                onclick="darkMode()"><img class="darkModeColor" src="./img/dark-mode.svg" alt="Dark Mode Button"></button>
+            </div>
+        </header>
+        <main id="container">
+            <div id="perfil">
+                <img 
+                src="img/photo.png" 
+                alt="Foto de perfil"
+                class="photo"
+                >
+                <h1 class="nome-insta">Pedro Gabriel</h1>
+                <p class="nome-insta">Developer</p>
+            </div>
+            <div id="link">
+                <ul>
+                    <li class="links"><a 
+                        href="https://api.whatsapp.com/send?phone=5583996082302"
+                        target="_blank">Whatsapp</a></li>
+                    <li class="links"><a 
+                        href="https://pedrogabriel.herokuapp.com/"
+                        target="_blank">Portfólio</a></li>
+                    <li class="links"><a 
+                        href="https://www.linkedin.com/in/pedrogles/"
+                        target="_blank">Linkedln</a></li>
+                    <li class="links"><a 
+                        href="https://github.com/pedrogles"
+                        target="_blank">GitHub</a></li>
+                </ul>
+            </div>
+        </main>
+        <footer>
+            <div id="rodape">
+                <p>Developed by <span class="underline">Pedro Gabriel</span>.</p>
+            </div>
+        </footer>
+        <script src="./index.js"></script>
+    </body>
+</html>

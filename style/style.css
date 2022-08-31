@@ -23,7 +23,11 @@
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--background);
     height: 100vh;
-    transition: background-color 1.2s; }
+    transition: background-color 1.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
     * body header .containerDarkMode {
       position: relative;
       height: 3em;

@@ -1,0 +1,16 @@
+@import "../global/global.scss";
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $whiteCollor;
+    color: $blackCollor;
+    width: 100%;
+    max-width: 20rem;
+    height: 3rem;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+

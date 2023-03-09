@@ -1,0 +1,138 @@
+@import "../global//global.scss";
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0 0.5rem 0;
+    width: 100%;
+    max-width: 70vw;
+    .projects-title {
+        font-size: 1.1rem;
+        font-weight: 300;
+        color: $whiteCollor;
+    }
+    .project {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0;
+        .image-mobile {
+            width: 14rem;
+            height: 24rem;
+            border: solid 0.2rem $whiteCollor;
+            border-radius: 10px;
+        }
+        .image-desktop {
+            display: none;
+        }
+        h4 {
+            color: $whiteCollor;
+            font-size: 1rem;
+            text-align: center;
+            font-weight: 500;
+            margin: 1rem 0 0.2rem 0;
+        }
+        a {
+            color: $whiteCollor;
+            font-size: 0.75rem;
+            font-weight: 100;
+            margin-bottom: 5rem;
+        }
+    }
+}
+@media (max-width: 250px) {
+    #projects .project {
+        .image-mobile {
+            display: none;
+        }
+        .image-desktop {
+            display: none;
+        }
+    }
+}
+@media (min-width: 481px) {
+    #projects {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0.5rem;
+        width: 320px;
+        .projects-title {
+            font-size: 1.1rem;
+            font-weight: 300;
+            margin: 1rem 0;
+            color: $whiteCollor;
+        }
+        .project {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 1.5rem 0 0 0;
+            .image-mobile {
+                width: 14rem;
+                height: 24rem;
+                border: solid 0.2rem $whiteCollor;
+                border-radius: 10px;
+            }
+            .image-desktop {
+                display: none;
+            }
+            h4 {
+                color: $whiteCollor;
+                font-size: 1rem;
+                font-weight: 500;
+                margin: 1rem 0 0.2rem 0;
+            }
+            a {
+                color: $whiteCollor;
+                font-size: 0.75rem;
+                font-weight: 100;
+                margin-bottom: 6rem;
+            }
+        }
+    }
+}
+@media (min-width: 1024px) {
+    #projects {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0.5rem;
+        width: 320px;
+        .projects-title {
+            font-size: 1.1rem;
+            font-weight: 300;
+            margin: 1rem 0;
+            color: $whiteCollor;
+        }
+        .project {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 1.5rem 0 0 0;
+            .image-mobile {
+                display: none;
+            }
+            .image-desktop {
+                display: block;
+                width: 20.5rem;
+                height: 16rem;
+                border: solid 0.2rem $whiteCollor;
+                border-radius: 10px;
+            }
+            h4 {
+                color: $whiteCollor;
+                font-size: 1rem;
+                font-weight: 500;
+                margin: 1rem 0 0.2rem 0;
+            }
+            a {
+                color: $whiteCollor;
+                font-size: 0.75rem;
+                font-weight: 100;
+                margin-bottom: 7rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+@import "../../styles/global/global.scss";
+
+#user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .user-image {
+        width: 100px;
+        border-radius: 50%;
+        border: solid 0.15rem #74fc78;
+    }
+    .user-name {
+        color: $whiteCollor;
+        font-size: 1.25rem;
+        font-weight: 500;
+        margin-top: 1rem;
+    }
+    .user-function {
+        color: $whiteCollor;
+        font-size: 1rem;
+        margin: 0.2rem 0;
+        font-weight: 300;
+    }
+}
+@media (min-width: 481px) {
+    #user {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .user-image {
+            width: 120px;
+            border-radius: 50%;
+            border: solid 0.15rem #74fc78;
+        }
+        .user-name {
+            color: $whiteCollor;
+            font-size: 1.25rem;
+            font-weight: 500;
+            margin-top: 1rem;
+        }
+        .user-function {
+            color: $whiteCollor;
+            font-size: 1rem;
+            margin: 0.2rem 0;
+            font-weight: 300;
+        }
+    }
+}

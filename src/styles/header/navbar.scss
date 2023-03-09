@@ -1,0 +1,39 @@
+@import "../global/global.scss";
+
+#header {
+    height: 4.5rem;
+    width: 100%;
+    background-color: $whiteCollor;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 10px 10px;
+    z-index: 1;
+    .header-isologo {
+        display: flex;
+        align-items: center;
+        .isologo-image {
+            width: 2.5rem;
+            height: 2.5rem;
+            margin-left: 2rem;
+        }
+    }
+    .header-modes {
+        display: flex;
+        align-items: center;
+        margin-right: 2rem;
+        .modes-buttons {
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            .light-mode-icon {
+                display: none;
+                font-size: 1.2rem;
+            }
+            .dark-mode-icon {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

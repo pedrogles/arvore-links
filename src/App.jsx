@@ -1,10 +1,6 @@
 import { navbar, user, links, buttons, projects } from "./utils/data";
 
-import Navbar from "./components/navbar/Navbar";
-import User from "./components/user/User";
-import Link from "./components/link/Link";
-import Button from "./components/button/Button";
-import Projects from "./components/projects/Projects";
+import Components from "./utils/components";
 
 import "./styles/app.scss";
 
@@ -12,11 +8,11 @@ export default function App() {
   
   return (
     <div id="app">
-      <Navbar 
+      <Components.Navbar 
         LogoSrc={navbar.logo.src} 
         LogoAlt={navbar.logo.alt} 
       />
-      <User
+      <Components.User
         Image={user.image.src}
         ImageAlt={user.image.alt}
         Name={user.name}
@@ -25,7 +21,7 @@ export default function App() {
       <div className="links">
         {links.map((link) => {
           return (
-            <Link
+            <Components.Link
               key={link.id}
               Icon={link.icon} 
               Href={link.href} 
@@ -35,14 +31,14 @@ export default function App() {
       </div>
       {buttons.map((button) => {
         return (
-          <Button
+          <Components.Button
             key={button.id}
             Name={button.name} 
             Href={button.href} 
           />
         )
       })}
-      <Projects Projects={projects}/>
+      <Components.Projects Projects={projects}/>
     </div>
   );
 };

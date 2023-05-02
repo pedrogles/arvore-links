@@ -1,13 +1,11 @@
-import '../../styles/user/user.scss';
+import "../../styles/user/user.scss";
 
-import UserImage from "../../assets/img/photo.png";
-
-export default function User () {
-    return (
-        <div id="user">
-            <img className="user-image" src={UserImage} alt="Foto do Pedro"/>
-            <h2 className="user-name">Pedro Gabriel</h2>
-            <p className="user-function">Front-end Developer</p>
-        </div>
-    )
+export default function User({ Image, ImageAlt, Name, Description }) {
+  return (
+    <div className="user">
+      <img src={Image} alt={ImageAlt} />
+      <h2>{Name}</h2>
+      <p>{Description}</p>
+    </div>
+  );
 }

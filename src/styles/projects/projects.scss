@@ -1,137 +1,209 @@
-@import "../global//global.scss";
+@import "../global.scss";
 
-#projects {
+.projects {
     display: flex;
     flex-direction: column;
-    margin: 2rem 0 0.5rem 0;
+    justify-content: center;
+    align-items: center;
+    max-width: 15rem;
     width: 100%;
-    max-width: 70vw;
-    .projects-title {
-        font-size: 1.1rem;
-        font-weight: 300;
-        color: $whiteCollor;
+    margin: 2rem 0;
+    h3 {
+        display: flex;
+        font-size: 1.333rem;
+        font-weight: 400;
+        justify-content: flex-start;
+        max-width: 15rem;
+        width: 100%;
+        margin-bottom: 0.5rem;
+        color: $blackCollor;
     }
-    .project {
+    .carousel {
+        display: flex;
+        flex-direction: row;
+        margin-top: 1rem;
+        .carousel-items {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            img {
+                height: 200px;
+                width: 200px;
+                border: solid 0.1rem $grayCollor;
+                border-radius: 5px;
+            }
+        }
+        .carousel-button {
+            background-color: transparent;
+            border: none;
+            font-size: 1.5rem;
+            margin: 1rem;
+            cursor: pointer;
+        }
+    }
+    .carousel-description {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 2rem 0;
-        .image-mobile {
-            width: 14rem;
-            height: 24rem;
-            border: solid 0.2rem $whiteCollor;
-            border-radius: 10px;
-        }
-        .image-desktop {
-            display: none;
-        }
+        margin: 0.5rem 0;
         h4 {
-            color: $whiteCollor;
-            font-size: 1rem;
+            font-size: 1.2rem;
             text-align: center;
-            font-weight: 500;
-            margin: 1rem 0 0.2rem 0;
+            font-weight: 400;
+            margin-bottom: 0.2rem;
+            color: $blackCollor;
         }
-        a {
-            color: $whiteCollor;
-            font-size: 0.75rem;
-            font-weight: 100;
-            margin-bottom: 5rem;
+        .carousel-description-link {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            a {
+                font-size: 1rem;
+                font-weight: 400;
+                color: $blackCollor;
+                margin-right: 0.2rem;
+            }
+            .info-button {
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                .info-icon {
+                    font-size: 1rem;
+                    color: $blackCollor;
+                }
+            }
+            .info-mensage {
+                display: none;
+                position: absolute;
+                top: 2rem;
+                width: 12rem;
+                background-color: #ffffff;
+                padding: 1rem;
+                border-radius: 10px;
+                p {
+                    text-align: center;
+                    font-size: 1rem;
+                    color: $blackCollor;
+                }
+            }
         }
     }
 }
-@media (max-width: 250px) {
-    #projects .project {
-        .image-mobile {
-            display: none;
-        }
-        .image-desktop {
-            display: none;
-        }
+
+@media (max-width: 300px) {
+    .projects .carousel .carousel-items img {
+        display: none;
     }
 }
-@media (min-width: 481px) {
-    #projects {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 0.5rem;
-        width: 320px;
-        .projects-title {
-            font-size: 1.1rem;
-            font-weight: 300;
-            margin: 1rem 0;
-            color: $whiteCollor;
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .projects {
+        max-width: 22rem;
+        margin: 2.5rem 0;
+        h3 {
+            font-size: 1.5rem;
+            max-width: 22rem;
+            margin-bottom: 1rem;
         }
-        .project {
+        .carousel {
+            margin-top: 1rem;
+            .carousel-items img {
+                height: 250px;
+                width: 250px;
+            }
+            .carousel-button {
+                font-size: 2rem;
+            }
+        }
+        .carousel-description {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            margin: 1.5rem 0 0 0;
-            .image-mobile {
-                width: 14rem;
-                height: 24rem;
-                border: solid 0.2rem $whiteCollor;
-                border-radius: 10px;
-            }
-            .image-desktop {
-                display: none;
-            }
+            margin: 0.5rem 0;
             h4 {
-                color: $whiteCollor;
-                font-size: 1rem;
-                font-weight: 500;
-                margin: 1rem 0 0.2rem 0;
+                font-size: 1.5rem;
+                font-weight: 400;
+                margin: 0.3rem 0;
             }
-            a {
-                color: $whiteCollor;
-                font-size: 0.75rem;
-                font-weight: 100;
-                margin-bottom: 6rem;
+            .carousel-description-link {
+                a {
+                    font-size: 1.3rem;
+                    font-weight: 400;
+                    color: #010101;
+                    margin-right: 0.2rem;
+                }
+                .info-button .info-icon {
+                    font-size: 1.2rem;
+                    color: #010101;
+                }
+                .info-mensage {
+                    display: none;
+                    position: absolute;
+                    top: 3rem;
+                    width: 18rem;
+                    background-color: #ffffff;
+                    padding: 1rem;
+                    border-radius: 10px;
+                    p {
+                        text-align: center;
+                        font-size: 1.2rem;
+                        color: #010101;
+                    }
+                }
             }
         }
     }
 }
-@media (min-width: 1024px) {
-    #projects {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 0.5rem;
-        width: 320px;
-        .projects-title {
-            font-size: 1.1rem;
-            font-weight: 300;
-            margin: 1rem 0;
-            color: $whiteCollor;
+
+@media (min-width: 769px) {
+    .projects {
+        max-width: 28rem;
+        margin: 3rem 0;
+        h3 {
+            font-size: 2rem;
+            max-width: 28rem;
+            margin-bottom: 1rem;
         }
-        .project {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin: 1.5rem 0 0 0;
-            .image-mobile {
-                display: none;
+        .carousel {
+            margin-top: 2rem;
+            .carousel-items img {
+                height: 340px;
+                width: 340px;
             }
-            .image-desktop {
-                display: block;
-                width: 20.5rem;
-                height: 16rem;
-                border: solid 0.2rem $whiteCollor;
-                border-radius: 10px;
+            .carousel-button {
+                font-size: 2.5rem;
             }
+        }
+        .carousel-description {
+            margin: 0.5rem 0;
             h4 {
-                color: $whiteCollor;
-                font-size: 1rem;
-                font-weight: 500;
-                margin: 1rem 0 0.2rem 0;
+                font-size: 1.9rem;
+                margin: 0.4rem 0;
             }
-            a {
-                color: $whiteCollor;
-                font-size: 0.75rem;
-                font-weight: 100;
-                margin-bottom: 7rem;
+            .carousel-description-link {
+                a {
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                    color: #010101;
+                    margin-right: 0.2rem;
+                }
+                .info-button .info-icon {
+                    font-size: 1.5rem;
+                }
+                .info-mensage {
+                    top: 3.5rem;
+                    width: 20rem;
+                    padding: 1.5rem;
+                    p {
+                        font-size: 1.5rem;
+                    }
+                }
             }
         }
     }

@@ -1,0 +1,33 @@
+@import "./global.scss";
+
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $whiteCollor;
+    height: 69rem;
+    .links {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    #app {
+        height: 88rem;
+        .links {
+            gap: 1rem;
+        }
+    }
+}
+
+@media (min-width: 769px) {
+    #app {
+        height: 110rem;
+        .links {
+            gap: 1rem;
+        }
+    }
+}

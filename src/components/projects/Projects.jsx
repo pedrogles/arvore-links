@@ -29,7 +29,7 @@ export default function Projects({ Projects }) {
         }
     }
     return (
-        <div className="projects">
+        <section className="projects">
             <h3>Projetos Recentes:</h3>
             <div className="carousel">
                 <button className="carousel-button" onClick={handlePrev}>
@@ -60,6 +60,6 @@ export default function Projects({ Projects }) {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

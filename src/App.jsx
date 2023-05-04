@@ -7,7 +7,7 @@ import "./styles/app.scss";
 export default function App() {
   
   return (
-    <div id="app">
+    <main id="app">
       <Components.Navbar 
         LogoSrc={navbar.logo.src} 
         LogoAlt={navbar.logo.alt} 
@@ -39,6 +39,6 @@ export default function App() {
         )
       })}
       <Components.Projects Projects={projects}/>
-    </div>
+    </main>
   );
 };

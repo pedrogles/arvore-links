@@ -18,7 +18,7 @@ export default function App() {
         Name={user.name}
         Description={user.description}
       />
-      <div className="links">
+      <section className="links">
         {links.map((link) => {
           return (
             <Components.Link
@@ -28,7 +28,7 @@ export default function App() {
             />
           )
         })}
-      </div>
+      </section>
       {buttons.map((button) => {
         return (
           <Components.Button

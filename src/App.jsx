@@ -1,6 +1,6 @@
 import { navbar, user, links, buttons, projects } from "./utils/data";
 
-import Components from "./utils/components";
+import { components } from "./utils/components";
 
 import "./styles/app.scss";
 
@@ -8,37 +8,37 @@ export default function App() {
   
   return (
     <main id="app">
-      <Components.Navbar 
-        LogoSrc={navbar.logo.src} 
-        LogoAlt={navbar.logo.alt} 
+      <components.Navbar 
+        logo={navbar.logo.src} 
+        alt={navbar.logo.alt} 
       />
-      <Components.User
-        Image={user.image.src}
-        ImageAlt={user.image.alt}
-        Name={user.name}
-        Description={user.description}
+      <components.User
+        image={user.image.src}
+        alt={user.image.alt}
+        name={user.name}
+        description={user.description}
       />
       <section className="links">
         {links.map((link) => {
           return (
-            <Components.Link
+            <components.Link
               key={link.id}
-              Icon={link.icon} 
-              Href={link.href} 
+              icon={link.icon} 
+              href={link.href} 
             />
           )
         })}
       </section>
       {buttons.map((button) => {
         return (
-          <Components.Button
+          <components.Button
             key={button.id}
-            Name={button.name} 
-            Href={button.href} 
+            name={button.name} 
+            href={button.href} 
           />
         )
       })}
-      <Components.Projects Projects={projects}/>
+      <components.Projects projects={projects}/>
     </main>
   );
 };

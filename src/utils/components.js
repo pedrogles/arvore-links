@@ -4,12 +4,10 @@ import Link from "../components/link/Link";
 import Button from '../components/button/Button';
 import Projects from "../components/projects/Projects";
 
-const Components = {
+export const components = {
     Navbar,
     User,
     Link,
     Button,
     Projects
 };
-
-export default Components;

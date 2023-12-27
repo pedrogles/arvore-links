@@ -2,12 +2,14 @@ import { MdArrowForwardIos, MdArrowBackIosNew, MdOutlineInfo } from "react-icons
 
 import { useState } from "react";
 
-import "../../styles/projects/projects.scss";
+import "./projects.scss";
 
-export default function Projects({ Projects }) {
+export default function Projects({ projects }) {
     const [index, setIndex] = useState(0);
     const handleNext = () => {
-        if(index === Projects.length - 1) {
+        const blinkButton = document.querySelector('.carousel-right-button');
+        blinkButton.style.animation = "stop";  
+        if(index === projects.length - 1) {
             setIndex(0);
         } else {
             setIndex(index + 1);
@@ -15,42 +17,45 @@ export default function Projects({ Projects }) {
     }
     const handlePrev = () => {
         if(index === 0){
-            setIndex(Projects.length - 1);
+            setIndex(projects.length - 1);
         } else { 
             setIndex(index - 1); 
         }
     }
     const handleClickInfo = () => {
+        const button = document.querySelector(".info-button");
         const mensage = document.querySelector(".info-mensage");
-        if(mensage.style.display === "none") {
-            mensage.style.display = "block";
-        } else {
-            mensage.style.display = "none";
-        }
+        if(button && mensage) {
+            mensage.style.display === "none" ? mensage.style.display = "block" : mensage.style.display = "none";
+        };
     }
     return (
         <section className="projects">
-            <h3>Projetos Recentes:</h3>
+            <h3 className="projects-title">Projetos Recentes:</h3>
             <div className="carousel">
-                <button className="carousel-button" onClick={handlePrev}>
-                    <MdArrowBackIosNew />
-                </button>
                 <div className="carousel-items">
-                    <img src={Projects[index].image} alt={Projects[index].alt} />
+                    <img className="carousel-image" src={projects[index].image} alt={projects[index].alt} />
+                    <div className="carousel-buttons">
+                        <button className="carousel-left-button" onClick={handlePrev}>
+                            <MdArrowBackIosNew className="icon-button"/>
+                        </button>
+                        <p className="carousel-index">{index + 1}</p>
+                        <button className="carousel-right-button" onClick={handleNext}>
+                            <MdArrowForwardIos className="icon-button"/>
+                        </button>
+                    </div>
                 </div>
-                <button className="carousel-button" onClick={handleNext}>
-                    <MdArrowForwardIos />
-                </button>
             </div>
             <div className="carousel-description">
-                <h4>{Projects[index].name}</h4>
-                <div className="carousel-description-link">
+                <h4 className="project-name">{projects[index].name}</h4>
+                <div className="carousel-description-anchor">
                     <a 
-                        href={Projects[index].href} 
+                        className="anchor"
+                        href={projects[index].href} 
                         target="_blank" 
                         rel="noopener noreferrer"
                         download="Portfólio-Renato-César.pdf">
-                            {Projects[index].type}
+                            {projects[index].type}
                     </a>
                     <button className="info-button" onClick={handleClickInfo}>
                         <MdOutlineInfo className="info-icon" />

@@ -1,11 +1,11 @@
-import "../../styles/user/user.scss";
+import "./user.scss";
 
-export default function User({ Image, ImageAlt, Name, Description }) {
+export default function User({  image, alt, name, description }) {
   return (
     <section className="user">
-      <img src={Image} alt={ImageAlt} />
-      <h2>{Name}</h2>
-      <p>{Description}</p>
+      <img className="user-image" src={image} alt={alt} />
+      <h2 className="user-name">{name}</h2>
+      <p className="user-description">{description}</p>
     </section>
   );
 }

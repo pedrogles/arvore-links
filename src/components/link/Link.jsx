@@ -1,10 +1,10 @@
-import "../../styles/link/link.scss";
+import "./link.scss";
 
-export default function Link({ Icon, Href }) {
+export default function Link({ icon, href }) {
   return (
     <>
-      <a className="link" href={Href}>
-        {Icon}
+      <a className="link" href={href}>
+        {icon}
       </a>
     </>
   );

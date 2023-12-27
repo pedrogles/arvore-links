@@ -1,13 +1,13 @@
-import "../../styles/button/button.scss";
+import "./button.scss";
 
-export default function Button({ Name, Href }) {
+export default function Button({ name, href }) {
   const handleButton = () => {
-    window.location.href = Href;
+    window.location.href = href;
   };
   return (
     <>
       <button className="button" onClick={handleButton}>
-        {Name}
+        {name}
       </button>
     </>
   );

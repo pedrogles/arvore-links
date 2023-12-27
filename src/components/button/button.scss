@@ -1,0 +1,38 @@
+@import "../../styles/global.scss";
+
+.button {
+  width: 100%;
+  max-width: 26rem;
+  background-color: $blackColor;
+  color: $whiteColor;
+  border: solid 0.1rem $brownColor;
+  border-radius: .5rem;
+  font-size: 1.6rem;
+  font-weight: 200;
+  margin-top: 1.5rem;
+  transition: 1s;
+  padding: 1.5rem 0;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: $lightDarkColor;
+  border: solid 0.1rem $lightBrownColor;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .button {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    max-width: 32rem;
+    padding: 2rem 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .button {
+    max-width: 38rem;
+    font-size: 2rem;
+    margin-top: 2rem;
+    padding: 2rem 0;
+  }
+}

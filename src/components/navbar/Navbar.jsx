@@ -1,10 +1,10 @@
 
-import "../../styles/navbar/navbar.scss";
+import "./navbar.scss";
 
-export default function Navbar({ LogoSrc, LogoAlt }) {
+export default function Navbar({ logo, alt }) {
   return (
     <header id="navbar">
-      <img src={LogoSrc} alt={LogoAlt} />
+      <img src={logo} alt={alt} />
     </header>
   );
 }

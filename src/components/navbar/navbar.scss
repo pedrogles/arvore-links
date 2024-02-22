@@ -5,7 +5,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #010101c5;
+  background-color: #f5f5f5;
+  box-shadow: 0.1rem 0.1rem 0.6rem #e2e2e2;
   height: 7rem;
   width: 100%;
   border-radius: 0 0 5px 5px;
@@ -13,6 +14,7 @@
     width: 4rem;
     height: 4rem;
     margin-left: 2rem;
+    filter: invert(1);
   }
 }
 

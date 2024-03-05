@@ -39,6 +39,10 @@
     
 4. Abra `http://localhost:5173/` no seu navegador para ver a aplicação.
 
+## Autor
+| [<img loading="lazy" src="https://avatars.githubusercontent.com/u/76228682?s=400&u=aaf31f62d04947559642f8f8e2d166faf39d5d86&v=4" width=115><br><sub>Pedro Gabriel</sub>](https://github.com/pedrogles) | 
+| :---: | 
+
 ## Contribuições
 
 Contribuições são sempre bem-vindas. Sinta-se à vontade para abrir uma issue ou enviar um pull request.

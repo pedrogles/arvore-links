@@ -1,8 +1,8 @@
-import NavbarComponent from "./navbar/Navbar";
-import UserComponent from "./user/User";
-import CircleLinkComponent from "./circlelink/CircleLink";
-import ButtonComponent from "./button/Button";
-import CardComponent from "./card/Card";
+import NavbarComponent from "./common/navbar/Navbar";
+import UserComponent from "./features/user/User";
+import CircleLinkComponent from "./common/circlelink/CircleLink";
+import ButtonComponent from "./common/button/Button";
+import CardComponent from "./common/card/Card";
 
 export function Navbar() {
     return <NavbarComponent />

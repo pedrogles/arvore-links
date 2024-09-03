@@ -1,4 +1,4 @@
-import pedro_photo from "../../assets/user/photo.png";
+import pedro_photo from "../../../assets/user/photo.png";
 
 export default function User() {
   return (

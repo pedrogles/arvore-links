@@ -1,4 +1,4 @@
-import isologo from "../../assets/logo/isologoBlack.png"
+import isologo from "../../../assets/logo/isologoBlack.png"
 
 export default function Navbar() {
   return (

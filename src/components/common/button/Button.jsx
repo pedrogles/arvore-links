@@ -1,4 +1,4 @@
-export default function Button({ name, href }) {
+export function Button({ name, href }) {
   const handleButton = () => {
     window.location.href = href;
   };

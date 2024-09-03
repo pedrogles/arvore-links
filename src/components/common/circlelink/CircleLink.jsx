@@ -1,4 +1,4 @@
-export default function CircleLink({ icon, href }) {
+export function CircleLink({ icon, href }) {
   return (
     <>
       <a 

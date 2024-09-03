@@ -1,4 +1,4 @@
-import { Navbar } from "../components/Index";
+import { Navbar } from "../components/common";
 
 export function PageLayout({ children }) {
     return (

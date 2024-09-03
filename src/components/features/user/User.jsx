@@ -1,6 +1,6 @@
 import pedro_photo from "../../../assets/user/photo.png";
 
-export default function User() {
+export function User() {
   return (
     <section className="flex flex-col justify-center items-center mt-32 mb-6 md:mt-40 lg:mt-48">
       <img className="w-full h-full max-w-32 max-h-32 rounded-full shadow-md md:max-w-44 md:max-h-44" 

@@ -3,7 +3,7 @@ import { useState } from "react";
 import { MdArrowForwardIos, MdArrowBackIosNew } from "react-icons/md";
 import { BiLinkExternal } from "react-icons/bi";
 
-export default function Card({ data: projects }) {
+export function Card({ data: projects }) {
     const [index, setIndex] = useState(0);
     const handleNext = () => {
         const blinkButton = document.getElementById("card-right-arrow");

@@ -4,8 +4,7 @@ import { RectangleButton, CircleButton, Section } from "../../common";
 export function Buttons() {
     const { circle: circleButtons, rectangle: rectangleButtons } = buttons;
     return (
-        <Section gap="gap-5 md:gap-7">
-          {/* Circle Buttons */}
+        <Section gap="gap-6 md:gap-8">
           <div className="flex flex-row justify-center flex-wrap gap-4 md:gap-6">
             {circleButtons.map((button) => {
               return (
@@ -18,7 +17,6 @@ export function Buttons() {
               )
             })}
           </div>
-          {/* Rectangle Buttons */}
           <div className="w-full flex flex-col items-center gap-5 md:gap-6">
             {rectangleButtons.map((button) => {
               return (
